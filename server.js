@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const formidable = require("formidable");
 
-// Create directory if not existsSync
+// Create directories if not exist
 fs.mkdir(__dirname + "/capes", (err) => {});
 fs.mkdir(__dirname + "/resourcepacks", (err) => {});
 fs.mkdir(__dirname + "/skins", (err) => {});
