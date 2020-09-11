@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MC Skin Server</title>
+        <style>
+            body {
+                background-color: #2A363B;
+                color: #FFF;
+            }
+            
+            div#container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -230px;
+                width: 450px;
+                height: 200px;
+                padding: 10px;
+                background-color: rgb(57, 134, 61);
+                border-radius: 10px;
+                text-align: center;
+            }
+            div#container > p {
+                font-family: 'Segoe UI';
+                font-size: 2em;
+            }
+            div#container > a > button {
+                margin: 20px 175px;
+                width: 100px;
+                height: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p id="response"> </p>
+            <a href="/"><button>Back</button></a>
+        </div>
+
+        <script>
+            document.querySelector("p#response").innerText = response;
+        </script>
+    </body>
+</html>
