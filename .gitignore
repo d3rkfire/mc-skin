@@ -1,4 +1,4 @@
 /node_modules
-/capes/*
-/resourcepacks/*
-/skins/*
+/capes
+/resourcepacks
+/skins
