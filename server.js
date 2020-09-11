@@ -2,6 +2,12 @@ const http = require("http");
 const fs = require("fs");
 const formidable = require("formidable");
 
+// Create directory if not existsSync
+fs.mkdir(__dirname + "/capes", (err) => {});
+fs.mkdir(__dirname + "/resourcepacks", (err) => {});
+fs.mkdir(__dirname + "/skins", (err) => {});
+
+// Server
 http.createServer((req, res) => {
     console.log(req.connection.remoteAddress);
     // console.log(__dirname + req.url);
